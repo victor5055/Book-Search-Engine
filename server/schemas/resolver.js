@@ -2,6 +2,8 @@ const { user, User} = require('../models');
 const { AuthenicationError } = require('apollo-server-express');
 const { signToken } = require('../utils/auth');
 
+
+// to define the necessary query and mutation functionality to work with Mongoose models
 const resolvers = {
     Query: {
     me: async (parent, args, context) => {
