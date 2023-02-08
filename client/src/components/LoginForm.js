@@ -2,7 +2,7 @@
 import React, { useState } from 'react';
 import { Form, Button, Alert } from 'react-bootstrap';
 
-import { loginUser } from '../utils/API';
+//import { loginUser } from '../utils/API';
 import Auth from '../utils/auth';
 
 // importing mutations
@@ -15,7 +15,7 @@ const LoginForm = () => {
   const [showAlert, setShowAlert] = useState(false);
 
 // initialize mutation
-const [loginUser, {error}] = useMutation(LOGIN_USER);
+const [login] = useMutation(LOGIN_USER);
 
   const handleInputChange = (event) => {
     const { name, value } = event.target;
@@ -26,15 +26,15 @@ const [loginUser, {error}] = useMutation(LOGIN_USER);
     event.preventDefault();
 
     // check if form has everything (as per react-bootstrap docs)
-   // const form = event.currentTarget;
-   // if (form.checkValidity() === false) {
-    //  event.preventDefault();
-      //event.stopPropagation();
-   // }
+    const form = event.currentTarget;
+    if (form.checkValidity() === false) {
+      event.preventDefault();
+      event.stopPropagation();
+    }
 
     try {
-        const { data } = await loginUser({
-            variables: {...userFormData}
+        const { data } = await login({
+            variables: { ...userFormData }
           });
 
      // if (!response.ok) {
@@ -44,8 +44,8 @@ const [loginUser, {error}] = useMutation(LOGIN_USER);
       //const { token, user } = await response.json();
       //console.log(user);
       Auth.login(data.login.token);
-    } catch (e) {
-      console.error(e);
+    } catch (err) {
+      console.error(err);
       setShowAlert(true);
     }
 
