@@ -1,5 +1,6 @@
 const express = require('express');
 const path = require('path');
+require ("dotenv").config();
 const db = require('./config/connection');
 
 const { ApolloServer } = require('apollo-server-express');
@@ -14,7 +15,10 @@ const app = express();
 const server = new ApolloServer({
     typeDefs,
     resolvers,
-    context: authMiddleware
+    context: authMiddleware,
+    //  These two lines below enable the playground when deployed to Heroku.
+    introspection: true,
+    playground: true, 
   });
   
   
