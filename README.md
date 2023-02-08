@@ -28,7 +28,7 @@ This project assisgnment is to :-
 
 - Set up an Apollo Server to use GraphQL queries and muations to fetch and modify data, replacing the existing RESTful API.
 - Modify the existing authenication middleware so that it works in the context of a GraphQL API.
-- Create an Apollo Provider so htat requests can communicate with an Apollo Server.
+- Create an Apollo Provider so that requests can communicate with an Apollo Server.
 - Deploy the application to Heroku with a MongoDB database using MongoDB Atlas.
 
 The URL of the GitHub repository is https://github.com/victor5055/Book-Search-Engine.git and the repository name is Book-Search-Engine.
