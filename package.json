@@ -10,17 +10,17 @@
     "build": "cd client && npm run build",
     "heroku-postbuild": "cd client && npm i && npm run build"
   },
-  "repository": {
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+ "repository": {
     "type": "git",
     "url": "git+https://github.com/victor5055/Book-Search-Engine.git"
   },
-  "keywords": [],
-  "author": "Victor Pereira",
-  "license": "ISC",
   "bugs": {
     "url": "https://github.com/victor5055/Book-Search-Engine/issues"
   },
-  "homepage": "https://github.com/victor5055/Book-Search-Engine#readme",
+  "homepage": "https://github.com/victor5055/Book-Search-Engine",
   "dependencies": {
     "apollo-server-express": "^3.11.1",
     "concurrently": "^7.6.0",
