@@ -13,7 +13,7 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
- "repository": {
+  "repository": {
     "type": "git",
     "url": "git+https://github.com/victor5055/Book-Search-Engine.git"
   },
@@ -26,6 +26,7 @@
     "concurrently": "^7.6.0",
     "dotenv": "^16.0.3",
     "if-env": "^1.0.4",
-    "jsonwebtoken": "^9.0.0"
+    "jsonwebtoken": "^9.0.0",
+    "serve": "^14.2.0"
   }
 }
