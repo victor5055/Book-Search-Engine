@@ -3,6 +3,12 @@ AS AN avid reader
 I WANT to search for new books to read
 SO THAT I can keep a list of books to purchase
 
+This application is a MERN stack application which is a group of four technologies, that is:-
+
+MongoDB
+Express.js
+ReactJS
+Node.js
 
 [Deployed Application]()
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
@@ -76,6 +82,22 @@ none
 ## Installation
 ###### [Back to Table of Contents](#Table-of-Contents)
 
+As this application has come already with mostly pre-installed npm packages and is fully functioning Google Books API search engine built with a RESTful API and to refactor it to be a Graph API built with Apollo Server, the following additional npm packages were installed:-
+
+  - npm i apollo-server-express
+  - npm i graphql
+  - npm i @apollo/client
+  - npm i @apollo/react-hooks
+
+  Before deploying to Heroku, the application is run in develop mode and tested using by entering at command prompt:-
+
+npm install (ensure all that dependencies are installed)
+
+npm init
+
+npm run develop ( cd to the correct directory)
+
+The application has been deployed to Heroku with a MongoDB database using MongoDB Atlas.
 
 
 ## Overview: What Was Accomplished!
@@ -86,7 +108,11 @@ none
 
 ### Screenshots (Building this application)
 ###### [Back to Table of Contents](#Table-of-Contents)
-![](./)
+![](./assets/image2.PNG)
+![](./assets/graphql.PNG)
+![](./assets/SignUp.PNG)
+![](./assets/BookSearch.PNG)
+![](./assets/saved%20books.PNG)
 
 
     
